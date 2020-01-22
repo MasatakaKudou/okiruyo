@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var beginButton: UIButton!
+ 
+    
+    // アプリの画面上に表示されたときに自動的に呼び出される
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.beginButton.layer.cornerRadius = 10.0
     }
 
 
