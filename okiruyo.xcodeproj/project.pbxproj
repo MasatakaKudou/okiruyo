@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3D7EC423D8CFA000891248 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3D7EC323D8CFA000891248 /* HomeViewController.swift */; };
 		2D9D35C123D5C3660055C200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C023D5C3660055C200 /* AppDelegate.swift */; };
 		2D9D35C323D5C3660055C200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C223D5C3660055C200 /* SceneDelegate.swift */; };
 		2D9D35C523D5C3660055C200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C423D5C3660055C200 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D3D7EC323D8CFA000891248 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D9D35BD23D5C3660055C200 /* okiruyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okiruyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9D35C023D5C3660055C200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D9D35C223D5C3660055C200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				2D9D35C923D5C36E0055C200 /* Assets.xcassets */,
 				2D9D35CB23D5C36E0055C200 /* LaunchScreen.storyboard */,
 				2D9D35CE23D5C36E0055C200 /* Info.plist */,
+				2D3D7EC323D8CFA000891248 /* HomeViewController.swift */,
 			);
 			path = okiruyo;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				2D9D35C523D5C3660055C200 /* ViewController.swift in Sources */,
 				2D9D35C123D5C3660055C200 /* AppDelegate.swift in Sources */,
 				2D9D35C323D5C3660055C200 /* SceneDelegate.swift in Sources */,
+				2D3D7EC423D8CFA000891248 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
