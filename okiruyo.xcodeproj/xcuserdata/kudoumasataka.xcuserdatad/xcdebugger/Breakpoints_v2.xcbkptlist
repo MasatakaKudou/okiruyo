@@ -30,8 +30,8 @@
             filePath = "okiruyo/AlermSettingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "textFieldShouldReturn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,10 +46,118 @@
             filePath = "okiruyo/AlermSettingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "textFieldShouldReturn(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "okiruyo/AlermSettingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "AlermSettingViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - 50b3130065734cfd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.backButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - 371feb6be3e5fce1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.backButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - 694ec9551f55e8f0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.backButton.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - a49ac2070c6df011"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.backButton.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - 3fbb2036b279f497"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; &#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "375">
+               </Location>
+               <Location
+                  uuid = "82ACBF2B-A853-4235-8944-AA3D17866E8C - fa9a4dca562d119c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;&#x304a;&#x304d;&#x308b;&#x3088;.AlermSettingViewController&gt;"
+                  moduleName = "&#x304a;&#x304d;&#x308b;&#x3088;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kudoumasataka/Desktop/code/Swift/okiruyo/okiruyo/AlermSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "313">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -10,12 +10,18 @@ import UIKit
 
 class AlermSettingViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var setButton: UIButton!
     @IBOutlet weak var todoTextField: UITextField!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var timePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setButton.layer.cornerRadius = 10.0
+        self.backButton.layer.cornerRadius = 10.0
         self.todoTextField.delegate = self
+        self.timePicker.setValue(UIColor.white, forKey: "textColor")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
