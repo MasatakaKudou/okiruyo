@@ -11,12 +11,14 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var addButton: UIImageView!
+    var addIcon = UIImage(named: "addButton")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.backButton.layer.cornerRadius = 10.0
+        addButton.image = addIcon
     }
-    
 
 }
