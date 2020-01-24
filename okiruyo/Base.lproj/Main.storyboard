@@ -104,6 +104,34 @@
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="107.8125"/>
         </scene>
+        <!--Alerm Setting View Controller-->
+        <scene sceneID="Eat-8S-YQ4">
+            <objects>
+                <viewController storyboardIdentifier="AlermSettingViewController" id="wg0-Og-bfm" customClass="AlermSettingViewController" customModule="おきるよ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CtL-YH-w4c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZT-P1-NIL">
+                                <rect key="frame" x="123" y="406" width="169" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OIs-hz-k3v" kind="presentation" modalPresentationStyle="fullScreen" id="RJg-9f-Cv8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wab-VO-kvR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujf-LM-zjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="108"/>
+        </scene>
         <!--Explain View Controller-->
         <scene sceneID="1My-DA-SW0">
             <objects>
@@ -145,6 +173,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Vy7-lG-8cw"/>
         <segue reference="lCu-0Y-Gwr"/>
     </inferredMetricsTieBreakers>
 </document>

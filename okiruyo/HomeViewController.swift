@@ -19,6 +19,26 @@ class HomeViewController: UIViewController {
         
         self.backButton.layer.cornerRadius = 10.0
         addButton.image = addIcon
+        addButton.isUserInteractionEnabled = true
+        addButton.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(moveToAlerm)
+            )
+        )
+    }
+    
+    // 画像がタップされたら呼ばれる
+    @objc func moveToAlerm() {
+        let alermSettingViewController = self.storyboard?.instantiateViewController(
+            withIdentifier: "AlermSettingViewController")
+            as! AlermSettingViewController
+        alermSettingViewController.modalPresentationStyle = .fullScreen
+        self.present(
+            alermSettingViewController,
+            animated: true,
+            completion: nil
+            )
     }
 
 }

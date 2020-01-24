@@ -23,6 +23,5 @@ class ViewController: UIViewController {
         self.explainButton.layer.cornerRadius = 10.0
     }
 
-
 }
 
