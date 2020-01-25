@@ -17,6 +17,7 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var timePicker: UIDatePicker!
     var selectDate:String = ""
     var alerms:[Alerm] = []
+    var now = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
        textField.resignFirstResponder()
        return true
     }
-    /* datePickerで選択した文字を保存 */
+    /* datePickerで選択した文字を格納 */
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         self.selectDate = self.format(date: timePicker.date)
     }
@@ -54,8 +55,13 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     @IBAction func setTimeAndText(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let alerm = Alerm(context: context)
-        alerm.time = self.selectDate
         alerm.text = self.todoTextField.text!
+        /* UIDatePickerに何も触れなかった時を判別 */
+        if self.format(date: timePicker.date) == self.format(date: now) {
+            alerm.time = self.format(date: now)
+        } else {
+            alerm.time = self.selectDate
+        }
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         do {
             // CoreDataからデータをfetchしてalermsに格納

@@ -12,7 +12,8 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var alermTime: UILabel!
     @IBOutlet weak var alermText: UILabel!
-
+    @IBOutlet weak var alermView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,7 +22,6 @@ class TableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        self.alermView.layer.cornerRadius = 10.0
     }
-
 }
