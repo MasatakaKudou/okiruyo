@@ -23,14 +23,24 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
         self.todoTextField.delegate = self
         self.timePicker.setValue(UIColor.white, forKey: "textColor")
     }
-    
+    /* 文字を打ち終わってdoneするとkeyboardを閉じる */
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
        textField.resignFirstResponder()
        return true
     }
+    /* keyboardの外に触れるとkeyboard閉じる */
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (self.todoTextField.isFirstResponder) {
             self.todoTextField.resignFirstResponder()
         }
     }
+    /* 値の受け渡し */
+    // 1. Segue実行前処理
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "setAlermSegue" {
+               let handOverAlermTime = segue.destination as! HomeViewController
+               handOverAlermTime.receiveTime = "20:20"
+            handOverAlermTime.receiveText = "サッカー"
+           }
+       }
 }
