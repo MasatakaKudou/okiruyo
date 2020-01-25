@@ -16,6 +16,7 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
     var selectDate:String = ""
+    var alerms:[Alerm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,13 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
         alerm.time = self.selectDate
         alerm.text = self.todoTextField.text!
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        do {
+            // CoreDataからデータをfetchしてalermsに格納
+            let fetchRequest: NSFetchRequest<Alerm> = Alerm.fetchRequest()
+            alerms = try context.fetch(fetchRequest)
+        } catch {
+            print("Error")
+        }
     }
     
 }

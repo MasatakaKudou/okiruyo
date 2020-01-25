@@ -32,7 +32,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             )
         )
         // cellの高さを固定する
-        self.alermTableView.rowHeight = 80.0;
+        self.alermTableView.rowHeight = 90.0;
+        print(alerms.count)
+    }
+    override func viewWillAppear(_ animated: Bool) {
         // CoreDateをreadする
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do {
@@ -42,7 +45,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } catch {
             print("Error")
         }
-        print(alerms.count)
+        // taskTableViewを再読み込みする
+        alermTableView.reloadData()
     }
     // 画像がタップされたら呼ばれる
     @objc func moveToAlerm() {
@@ -84,6 +88,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Error")
             }
         }
-        tableView.reloadData()
+        alermTableView.reloadData()
     }
 }
