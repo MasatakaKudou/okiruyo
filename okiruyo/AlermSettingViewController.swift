@@ -14,6 +14,7 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var todoTextField: UITextField!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
+    var selectDate:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,19 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
        textField.resignFirstResponder()
        return true
     }
+    /* datePickerで選択した文字を保存 */
+    @IBAction func dateChanged(_ sender: UIDatePicker) {
+        self.selectDate = self.format(date: timePicker.date)
+    }
+    /* datePickerで選んだdateをformatしたStringにキャスト */
+    func format(date:Date)->String{
+        
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "MM/dd"
+        let strDate = dateformatter.string(from: date)
+        
+        return strDate
+    }
     /* keyboardの外に触れるとkeyboard閉じる */
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (self.todoTextField.isFirstResponder) {
@@ -39,8 +53,8 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if segue.identifier == "setAlermSegue" {
                let handOverAlermTime = segue.destination as! HomeViewController
-               handOverAlermTime.receiveTime = "20:20"
-            handOverAlermTime.receiveText = "サッカー"
+            handOverAlermTime.receiveTimes.append(selectDate)
+            handOverAlermTime.receiveTexts.append(self.todoTextField.text!)
            }
        }
 }

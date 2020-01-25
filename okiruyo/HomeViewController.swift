@@ -14,8 +14,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var addButton: UIImageView!
     @IBOutlet weak var alermTableView: UITableView!
     var addIcon = UIImage(named: "addButton")!
-    var receiveTime: String = ""
-    var receiveText: String = ""
+//    var receiveTime: String = ""
+    var receiveTimes: [String] = []
+//    var receiveText: String = ""
+    var receiveTexts: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
         // cellの高さを固定する
         self.alermTableView.rowHeight = 80.0;
+        print(receiveTimes.count)
     }
     // 画像がタップされたら呼ばれる
     @objc func moveToAlerm() {
@@ -48,16 +51,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     // セルの個数を指定するデリゲートメソッド（必須）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return receiveTimes.count
     }
     // セルに値を設定するデータソースメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         // セルに表示する値を設定する
-        cell.alermTime.text = receiveTime
-        cell.alermText.text = receiveText
+        cell.alermTime.text = receiveTimes[indexPath.row]
+        cell.alermText.text = receiveTexts[indexPath.row]
         return cell
     }
-    
 }
