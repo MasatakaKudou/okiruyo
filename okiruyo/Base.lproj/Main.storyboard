@@ -216,6 +216,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="setTimeAndText:" destination="wg0-Og-bfm" eventType="touchUpInside" id="w7j-u6-81I"/>
                                     <segue destination="OIs-hz-k3v" kind="presentation" identifier="setAlermSegue" modalPresentationStyle="fullScreen" id="UDB-AF-VoX"/>
                                 </connections>
                             </button>

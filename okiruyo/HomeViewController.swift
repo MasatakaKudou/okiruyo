@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -14,10 +15,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var addButton: UIImageView!
     @IBOutlet weak var alermTableView: UITableView!
     var addIcon = UIImage(named: "addButton")!
-//    var receiveTime: String = ""
-    var receiveTimes: [String] = []
-//    var receiveText: String = ""
-    var receiveTexts: [String] = []
+    var alerms:[Alerm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +33,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
         // cellの高さを固定する
         self.alermTableView.rowHeight = 80.0;
-        print(receiveTimes.count)
+        // read
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do {
+            // CoreDataからデータをfetchしてalermsに格納
+            let fetchRequest: NSFetchRequest<Alerm> = Alerm.fetchRequest()
+            alerms = try context.fetch(fetchRequest)
+        } catch {
+            print("Error")
+        }
     }
     // 画像がタップされたら呼ばれる
     @objc func moveToAlerm() {
@@ -51,18 +57,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     // セルの個数を指定するデリゲートメソッド（必須）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return receiveTimes.count
+        return alerms.count
     }
     // セルに値を設定するデータソースメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        // セル番号の入力値を変数に代入
-        let timeItem = receiveTimes[indexPath.row]
-        let textItem = receiveTexts[indexPath.row]
-        // セルに表示する値を設定する
-        cell.alermTime.text = timeItem
-        cell.alermText.text = textItem
+        let alerm = alerms[indexPath.row]
+        cell.alermTime.text = alerm.time
+        cell.alermText.text = alerm.text
         return cell
     }
 }

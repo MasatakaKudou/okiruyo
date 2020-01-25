@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AlermSettingViewController: UIViewController, UITextFieldDelegate {
 
@@ -32,7 +33,6 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     /* datePickerで選択した文字を保存 */
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         self.selectDate = self.format(date: timePicker.date)
-        print(timePicker.date)
     }
     /* datePickerで選んだdateをformatしたStringにキャスト */
     func format(date:Date)->String{
@@ -49,13 +49,13 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
             self.todoTextField.resignFirstResponder()
         }
     }
-    /* 値の受け渡し */
-    // 1. Segue実行前処理
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "setAlermSegue" {
-               let handOverAlermTime = segue.destination as! HomeViewController
-            handOverAlermTime.receiveTimes.append(selectDate)
-            handOverAlermTime.receiveTexts.append(self.todoTextField.text!)
-           }
-       }
+    /* セーブ */
+    @IBAction func setTimeAndText(_ sender: Any) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let alerm = Alerm(context: context)
+        alerm.time = self.selectDate
+        alerm.text = self.todoTextField.text!
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    }
+    
 }
