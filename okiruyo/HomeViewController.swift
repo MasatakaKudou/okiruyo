@@ -57,9 +57,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        // セル番号の入力値を変数に代入
+        let timeItem = receiveTimes[indexPath.row]
+        let textItem = receiveTexts[indexPath.row]
         // セルに表示する値を設定する
-        cell.alermTime.text = receiveTimes[indexPath.row]
-        cell.alermText.text = receiveTexts[indexPath.row]
+        cell.alermTime.text = timeItem
+        cell.alermText.text = textItem
         return cell
     }
 }
