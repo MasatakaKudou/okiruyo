@@ -136,19 +136,28 @@
                                                     <rect key="frame" x="13" y="10" width="203" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.30707019990000001" green="0.0" blue="0.42032836289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-nC-5ji">
                                                     <rect key="frame" x="16" y="65" width="200" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.30707019986378276" green="0.0" blue="0.42032836294416243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-Zr-EhT">
+                                                    <rect key="frame" x="234" y="31" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="onTintColor" red="0.30707019990000001" green="0.0" blue="0.42032836289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="switchFunc:" destination="IcF-47-jwH" eventType="valueChanged" id="wn7-Za-gVE"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="alermSwitch" destination="8cf-Zr-EhT" id="lhQ-tp-UEY"/>
                                             <outlet property="alermText" destination="7ni-nC-5ji" id="daQ-N4-ew3"/>
                                             <outlet property="alermTime" destination="fmJ-1E-Rpb" id="1uK-Os-qJe"/>
                                             <outlet property="alermView" destination="dHY-Mu-C6w" id="Ope-EG-7M5"/>

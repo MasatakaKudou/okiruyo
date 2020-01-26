@@ -35,14 +35,13 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     /* datePickerで選択した文字を格納 */
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         self.selectDate = self.format(date: timePicker.date)
+        print(timePicker.date)
     }
     /* datePickerで選んだdateをformatしたStringにキャスト */
     func format(date:Date)->String{
-        
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "hh:mm"
         let strDate = dateformatter.string(from: date)
-        
         return strDate
     }
     /* keyboardの外に触れるとkeyboard閉じる */

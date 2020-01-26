@@ -19,7 +19,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.backButton.layer.cornerRadius = 10.0
         addButton.image = addIcon
         // imageにタッチ判定を与える
@@ -33,7 +32,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
         // cellの高さを固定する
         self.alermTableView.rowHeight = 100.0;
-        print(alerms.count)
     }
     override func viewWillAppear(_ animated: Bool) {
         // CoreDateをreadする
