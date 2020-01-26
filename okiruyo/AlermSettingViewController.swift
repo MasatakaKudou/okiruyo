@@ -21,7 +21,6 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.setButton.layer.cornerRadius = 10.0
         self.backButton.layer.cornerRadius = 10.0
         self.todoTextField.delegate = self
@@ -35,12 +34,11 @@ class AlermSettingViewController: UIViewController, UITextFieldDelegate {
     /* datePickerで選択した文字を格納 */
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         self.selectDate = self.format(date: timePicker.date)
-        print(timePicker.date)
     }
     /* datePickerで選んだdateをformatしたStringにキャスト */
     func format(date:Date)->String{
         let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "hh:mm"
+        dateformatter.dateFormat = "HH:mm"
         let strDate = dateformatter.string(from: date)
         return strDate
     }

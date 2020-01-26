@@ -244,7 +244,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="218" id="Rfu-mT-obp"/>
                                 </constraints>
-                                <locale key="locale" localeIdentifier="ja_JP"/>
+                                <locale key="locale" localeIdentifier="da"/>
                                 <connections>
                                     <action selector="dateChanged:" destination="wg0-Og-bfm" eventType="valueChanged" id="d5L-7X-gVW"/>
                                 </connections>
