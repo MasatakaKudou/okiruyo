@@ -12,6 +12,7 @@
 		2D3D7EC423D8CFA000891248 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3D7EC323D8CFA000891248 /* HomeViewController.swift */; };
 		2D45375923DA9BCC009DE841 /* AlermSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D45375823DA9BCC009DE841 /* AlermSettingViewController.swift */; };
 		2D890D3523DCC25400C6A1EB /* AlermData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D890D3323DCC25400C6A1EB /* AlermData.xcdatamodeld */; };
+		2D890D3923DD2C0100C6A1EB /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D890D3823DD2C0100C6A1EB /* UIColorHex.swift */; };
 		2D9D35C123D5C3660055C200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C023D5C3660055C200 /* AppDelegate.swift */; };
 		2D9D35C323D5C3660055C200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C223D5C3660055C200 /* SceneDelegate.swift */; };
 		2D9D35C523D5C3660055C200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D35C423D5C3660055C200 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		2D3D7EC323D8CFA000891248 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D45375823DA9BCC009DE841 /* AlermSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermSettingViewController.swift; sourceTree = "<group>"; };
 		2D890D3423DCC25400C6A1EB /* AlermData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlermData.xcdatamodel; sourceTree = "<group>"; };
+		2D890D3823DD2C0100C6A1EB /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		2D9D35BD23D5C3660055C200 /* おきるよ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "おきるよ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9D35C023D5C3660055C200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D9D35C223D5C3660055C200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				2D45375823DA9BCC009DE841 /* AlermSettingViewController.swift */,
 				2D2B152423DC6290001CC465 /* TableViewCell.swift */,
 				2D890D3323DCC25400C6A1EB /* AlermData.xcdatamodeld */,
+				2D890D3823DD2C0100C6A1EB /* UIColorHex.swift */,
 			);
 			path = okiruyo;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D890D3923DD2C0100C6A1EB /* UIColorHex.swift in Sources */,
 				2D45375923DA9BCC009DE841 /* AlermSettingViewController.swift in Sources */,
 				2D890D3523DCC25400C6A1EB /* AlermData.xcdatamodeld in Sources */,
 				2D9D35C523D5C3660055C200 /* ViewController.swift in Sources */,

@@ -32,8 +32,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             )
         )
         // cellの高さを固定する
-        self.alermTableView.rowHeight = 90.0;
-//        self.alermTableView.ro
+        self.alermTableView.rowHeight = 100.0;
         print(alerms.count)
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -69,6 +68,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.systemYellow
+        } else {
+            cell.backgroundColor = UIColor(hex: "FFCC00",alpha: 0.9)
+        }
         let alerm = alerms[indexPath.row]
         cell.alermTime.text = alerm.time
         cell.alermText.text = alerm.text
