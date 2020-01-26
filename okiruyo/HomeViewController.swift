@@ -33,6 +33,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
         // cellの高さを固定する
         self.alermTableView.rowHeight = 90.0;
+//        self.alermTableView.ro
         print(alerms.count)
     }
     override func viewWillAppear(_ animated: Bool) {
